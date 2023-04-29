@@ -1,7 +1,7 @@
 # Brief example of an API with Express🌐
 
 #### About the project
-A very simple API is created that allows to use the basic `HTTP` verbs to make requests on URL addresses. As additional data: 
+In this small example a very simple API is created that allows to use the basic `HTTP` verbs to make requests on URL addresses. As additional data:
 1. Module system used:  **` ECMAScript Modules `** ‼️
 2. The VS Code extension 'Thunder Client' is used for http requests.
 3. A small database in Json format in the `bbdd.js` file to manipulate with requests.
