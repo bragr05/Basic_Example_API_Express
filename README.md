@@ -1,10 +1,11 @@
 # Brief example of an API with Express🌐
 
 #### About the project
-In this small example a very simple API is created that allows to use the basic `HTTP` verbs to make requests on URL addresses. As additional data:
+In this small example we create a very simple API that allows to use the basic `HTTP` verbs to make requests on URLs using a small DB **loaded in memory**. This project focuses on business logic and data manipulation (**does not include a frontend**).
+As additional data:
 1. Module system used:  **` ECMAScript Modules `** ‼️
 2. The VS Code extension 'Thunder Client' is used for http requests.
-3. A small database in Json format in the `bbdd.js` file to manipulate with requests.
+3. A small database in Json format in the file `bbdd.js`, this is loaded **in memory** to manipulate it by the operations.
 
 #### Libraries
 - `Nodemon`: To avoid having to restart the server every time the server is changed 
