@@ -19,9 +19,11 @@ As additional data:
 4. Run the project with the npm run dev command.
 ---
 <center>
-  <strong>
+  <p align="center">
+    <strong>
     Thanks for using this project! If you have any problems or suggestions, feel free to create an issue on GitHub.
-  </strong>
+    </strong>
+  <p>
 <br>
 <img src="https://raw.githubusercontent.com/StewartGF/StewartGF/master/images/github.gif" width="150" alt="GIF">
 </center>
