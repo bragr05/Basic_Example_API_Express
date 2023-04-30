@@ -10,7 +10,7 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(express.text());
-app.use(account_router);
+app.use("/account", account_router);
 
 app.listen(PORT, () => {
   console.log(`Listening port ${PORT}`);

@@ -4,8 +4,14 @@ import { USERS_DATA } from "../bbdd.js";
 
 const account_router = express.Router();
 
+// Example of middleware that only affects paths in the account.js file
+account_router.use((req, res, next) => {
+  console.log(`IP request: ${req.ip}`);
+  next();
+});
+
 // Get account details
-account_router.get("/account/:guid", (req, res) => {
+account_router.get("/:guid", (req, res) => {
   //Verify user existence
   const user = USERS_DATA.find((user) => user.guid === req.params.guid);
   if (!user) return res.status(404).send();
@@ -13,7 +19,7 @@ account_router.get("/account/:guid", (req, res) => {
 });
 
 // Create account
-account_router.post("/account/", (req, res) => {
+account_router.post("/", (req, res) => {
   const { guid, name, company, email, phone } = req.body;
   //Verify user existence (Status 409 if user is already registered)
   const user_exist = USERS_DATA.find((user) => user.guid === guid);
@@ -33,7 +39,7 @@ account_router.post("/account/", (req, res) => {
 });
 
 // Update account
-account_router.patch("/account/:guid", (req, res) => {
+account_router.patch("/:guid", (req, res) => {
   const { name, company, email, phone } = req.body;
   //Verify user existence
   const user_index_update = USERS_DATA.findIndex(
@@ -54,7 +60,7 @@ account_router.patch("/account/:guid", (req, res) => {
 });
 
 // Delete account
-account_router.delete("/account/:guid", (req, res) => {
+account_router.delete("/:guid", (req, res) => {
   //Verify user existence
   const user_index_delete = USERS_DATA.findIndex(
     (user) => user.guid === req.params.guid
