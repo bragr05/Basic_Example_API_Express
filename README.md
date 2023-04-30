@@ -17,3 +17,14 @@ As additional data:
 2. Create the `.env` file following the attached `.env.example file`.
 3. Install the necessary libraries using the `npm install` command.
 4. Run the project with the npm run dev command.
+---
+<div style="text-align:center;">
+  <p style="color:#ed501c">
+    <strong>
+      Thanks for using this project! If you have any problems or suggestions, feel free to create an issue on GitHub.
+    </strong>
+  </p>
+  <br>
+  <img src="https://raw.githubusercontent.com/StewartGF/StewartGF/master/images/github.gif" width="150" alt="GIF">
+</div>
+
