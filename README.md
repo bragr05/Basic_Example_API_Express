@@ -25,7 +25,7 @@ As additional data:
     </strong>
     <br>
     <br>
-    <img src="https://raw.githubusercontent.com/StewartGF/StewartGF/master/images/github.gif" width="150" alt="GIF">
+    <img src="https://33.media.tumblr.com/26096d682c56c950bcf9b790db418bef/tumblr_no979wnMPZ1s4e3v8o1_500.gif" width="150" alt="GIF">
   <p>
 
 
